@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>DODABURGER</title>
+</head>
+<body>
+{% for ProductModel in posts %}
+    <img src="{{ProductModel.image.url}}" alt="">
+{% endfor %}
+</body>
+</html>
